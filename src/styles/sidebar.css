@@ -1,0 +1,158 @@
+header {
+  width: 317px;
+  display: flex;
+  justify-content: flex-end;
+}
+header > svg {
+  width: 45px;
+  height: 28px;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1px 11px;
+}
+.container {
+  /* background-color: aquamarine; */
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0px;
+}
+.container .logo {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.8px 2.8px;
+}
+
+.container .logo svg {
+  width: 29px;
+  height: 28.5px;
+}
+.container .logo svg path {
+  fill: rgb(214, 217, 219);
+}
+
+.side-btnLink {
+  height: 46.5px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.side-btnStyle {
+  padding: 11px 11px;
+  display: flex;
+}
+
+.side-btnStyle:hover {
+  background-color: var(--btn-hover-color);
+  border-radius: 9999px;
+  width: max-content;
+  cursor: pointer;
+}
+.side-btnStyle > svg {
+  width: 26.5px;
+  height: 27.5px;
+}
+
+.side-btnStyle span:nth-child(3) {
+  margin: 0 14px 0 18px;
+  font-size: 18px;
+  font-weight: 400;
+  display: inline;
+}
+.notification {
+  width: 6px;
+  height: 6px;
+  margin: -3px 18px;
+  border-radius: 6px;
+  background-color: var(--tweet-btn-color);
+  position: absolute;
+}
+.tweet-btn {
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--tweet-btn-color);
+  border-radius: 9999px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tweet-btn-sidebar {
+  width: 167.68px;
+  height: 45px;
+  padding: 0 29px;
+  margin: 12px 0;
+  border: 1px solid var(--tweet-btn-color);
+  display: flex;
+  font-size: 15px;
+  font-weight: 700;
+}
+.tweet-btn-sidebar > span {
+  display: inline;
+}
+.tweet-btn-sidebar > svg {
+  width: 22px;
+  height: 22px;
+  display: none;
+}
+
+.miniProfile {
+  height: 58px;
+  margin: 11px;
+  border-radius: 58px;
+  display: flex;
+
+  align-self: flex-end;
+}
+.miniProfile:hover {
+  background-color: var(--btn-hover-color);
+  cursor: pointer;
+}
+.miniProfile-context {
+  height: 36;
+  padding: 11px 12px;
+  display: flex;
+  align-items: center;
+}
+.miniProfile-picture,
+.miniProfile-picture > svg {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+}
+
+.miniProfile-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 11px;
+}
+.miniProfile-text > span {
+  font-size: 14px;
+}
+.miniProfile-text > span:nth-child(1) {
+  font-weight: 700;
+}
+.miniProfile-text > span:nth-child(2) {
+  font-weight: 400;
+  color: var(--text-gray-color);
+}
+.miniProfile-icon {
+  display: flex;
+  justify-content: flex-end;
+  width: 60px;
+}
+.miniprofile-icon > svg {
+  width: 17.5px;
+  height: 17.5px;
+}
+.miniProfile-icon > svg > path {
+  fill: var(--text-color);
+  width: 50px !important;
+}

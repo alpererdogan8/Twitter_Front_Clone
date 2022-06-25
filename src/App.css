@@ -1,0 +1,81 @@
+@import "./styles/layout.css";
+@import "./styles/sidebar.css";
+@import "./styles/timeline.css";
+@import "./styles/trends.css";
+
+:root {
+  /*colors*/
+  --theme-dark: black;
+  --theme-trend-color: rgb(22, 24, 28);
+  --border-color: #2f3336;
+  --btn-hover-color: #15181c;
+  --text-color: rgb(231, 233, 234);
+  --tweet-btn-color: rgb(120, 86, 255);
+  --text-gray-color: rgb(113, 118, 123);
+}
+
+/* html {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+} */
+body {
+  background-color: var(--theme-dark);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: -42px;
+}
+@media screen and (max-width: 1298px) {
+  .side-btnStyle span:nth-child(3) {
+    display: none;
+  }
+  .tweet-btn-sidebar {
+    width: 47px;
+    height: 47px;
+    padding: 0;
+  }
+  .tweet-btn-sidebar > svg {
+    display: inline;
+  }
+  .tweet-btn-sidebar > span {
+    display: none;
+  }
+  .container {
+    align-items: flex-end;
+  }
+  header{
+    width: 130px;
+  }
+  .miniProfile-text,
+  .miniProfile-icon {
+    display: none;
+  }
+  .trends {
+    display: none;
+  }
+}
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section {
+  border-right: solid 1px var(--border-color);
+  border-left: solid 1px var(--border-color);
+}
+
+/* TODO => css responsive class tag name */
+/* 
+.side-btnStyle span:nth-child(3)
+.tweet-btn-sidebar > svg 
+.trends
+.miniProfile-text
+.miniProfile-icon
+.container
+*/

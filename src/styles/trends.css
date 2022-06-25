@@ -1,0 +1,198 @@
+.trends {
+  width: 390px;
+  background-color: rgba(137, 43, 226, 0);
+  display: flex;
+  margin-top: 53.8px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.trends-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 20px;
+  width: 350px;
+}
+/* search */
+.trends-search-wrapper {
+  width: 390px;
+  padding-top: 1px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: auto;
+  position: fixed;
+  top: 0;
+}
+
+.trends-container .trends-search-wrapper .trends-search {
+  width: 350px;
+  height: 40px;
+  margin: 3px 0 2px 0;
+  border-radius: 38px;
+  display: flex;
+  align-items: center;
+}
+.trends-container .trends-search-wrapper .trends-search .trends-searchbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  background-color: var(--theme-trend-color);
+  border-radius: 999px;
+}
+
+.trends-container
+  .trends-search-wrapper
+  .trends-search
+  .trends-searchbar
+  .trends-search-icon {
+  width: 40px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.trends-container
+  .trends-search-wrapper
+  .trends-search
+  .trends-searchbar
+  .trends-search-icon
+  > svg {
+  padding-left: 13px;
+  padding-top: 2.6px;
+  width: 29px;
+  height: 17.5px;
+}
+.trends-container
+  .trends-search-wrapper
+  .trends-search
+  .trends-searchbar
+  .trends-search-icon
+  > svg
+  > path {
+  fill: var(--text-gray-color);
+}
+.trends-container
+  .trends-search-wrapper
+  .trends-search
+  .trends-searchbar
+  .trends-search-icon
+  > svg
+  > path:focus-within {
+  fill: var(--tweet-btn-color);
+}
+
+.trends-container
+  .trends-search-wrapper
+  .trends-search
+  .trends-searchbar
+  input[type="text"] {
+  width: 269px;
+  height: 36px;
+  border-radius: 999px;
+  outline: none;
+  background-color: unset;
+  color: var(--text-color);
+  padding-left: 12px;
+  padding-top: -5px;
+  margin-top: -2.5px;
+}
+.trends-container
+  .trends-search-wrapper
+  .trends-search
+  .trends-searchbar
+  input[type="text"]::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  padding-left: 0px;
+  padding-top: -12px;
+}
+.trends-container
+  .trends-search-wrapper
+  .trends-search
+  .trends-searchbar:focus-within {
+  border: 2px solid var(--tweet-btn-color);
+  background-color: black;
+}
+/* search */
+
+/* Trend Topics */
+.trends-container .trends-box {
+  width: 350px;
+  /* height: 812px; */
+  border-radius: 16px;
+  margin-top: 5px;
+  background-color: var(--theme-trend-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.trends-container .trends-box .trends-header {
+  width: 320px;
+  height: 22px;
+  padding: 11px 14px;
+  font-size: 17.3px;
+  font-weight: 800;
+}
+.trends-container .trends-box .trends-show-more {
+  width: 320px;
+  height: 18px;
+  padding: 14px;
+  padding: 11px 14px;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--tweet-btn-color);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.trends-container .trends-box .trend-box {
+  width: 100%;
+  height: 74px;
+}
+.trends-container .trends-box .trend-box .trend-container {
+  width: 320px;
+  height: 18px;
+  padding: 11px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.trends-container .trends-box .trend-box .trend-container .trend-top {
+  display: flex;
+  justify-content: space-between;
+}
+.trends-container
+  .trends-box
+  .trend-box
+  .trend-container
+  .trend-top
+  .trend-category {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-gray-color);
+}
+.trends-container
+  .trends-box
+  .trend-box
+  .trend-container
+  .trend-top
+  > svg
+  > path {
+  fill: var(--text-gray-color);
+}
+.trends-container .trends-box .trend-box .trend-container .trend-number {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-gray-color);
+}
+.trends-container .trends-box .trend-box .trend-container .trend-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+/* Trend Topics */

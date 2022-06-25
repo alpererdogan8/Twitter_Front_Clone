@@ -1,0 +1,294 @@
+section {
+  width: 598px;
+}
+
+/* Page Title Style */
+.page-title-ghost {
+  height: 52px;
+}
+.page-title {
+  position: fixed;
+  width: inherit;
+}
+.page-title-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 14px;
+  background-color: var(--theme-dark);
+}
+.page-title-wrapper > span {
+  font-size: 18px;
+  font-weight: 700;
+}
+button {
+  background-color: unset;
+  width: 50px;
+  height: 48px;
+  margin: 2px -18px;
+}
+.page-title-wrapper > button > svg {
+  background-color: unset;
+  width: 18px;
+  height: 18px;
+}
+.page-title-wrapper > button:hover {
+  cursor: pointer;
+}
+
+/* Page Title Style */
+
+/* Tweet Editor */
+.editor {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.editor-container {
+  margin-top: -9px;
+  padding: 14px 14px 7px 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: auto;
+}
+.editor-photo {
+  width: 43px;
+  height: 95px;
+  margin-right: 11px;
+  display: flex;
+  align-self: flex-start;
+}
+.editor-photo > svg {
+  width: 43px;
+  height: 43px;
+  border-radius: 43px;
+}
+.editor-desk {
+  width: 516px;
+  padding-top: 4px;
+}
+.editor-text {
+  background-color: inherit;
+  color: var(--text-color);
+  font-size: 18px;
+  width: 516px;
+  min-height: 41px;
+  resize: none;
+  border-width: 2px;
+  outline: none;
+  padding: 11px 0;
+}
+.editor-text::placeholder {
+  font-size: 18px;
+  font-weight: 400px;
+  padding: 0 2px;
+  color: var(--text-gray-color);
+}
+
+.editor-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editor-footer .editor-button {
+  display: flex;
+  justify-content: space-evenly;
+  width: 37.5%;
+  height: none;
+  margin-top: -2px;
+}
+.editor-footer .editor-button > span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
+.editor-footer .editor-button > span:hover {
+  cursor: pointer;
+}
+
+.editor-footer .editor-button > span > svg {
+  width: 18px;
+  height: 18px;
+}
+.editor-footer .editor-button > span > svg > path {
+  fill: var(--tweet-btn-color);
+}
+.editor-footer .editor-button > span > svg > g {
+  fill: var(--tweet-btn-color);
+}
+.editor-footer .editor-tweet-button {
+  width: 80.17px;
+  height: 32px;
+  margin-top: -9px;
+
+  padding: 0 -19px;
+
+  justify-self: flex-end;
+}
+.editor-footer .editor-tweet-button > a {
+  width: 69.17px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--tweet-btn-color);
+  border-radius: 9999px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 9px;
+}
+
+/* Tweet Editor */
+
+/* Tweets */
+.timeline {
+}
+.tweet {
+  width: 598px;
+  border-top: solid 1px var(--border-color);
+  border-bottom: solid 1px var(--border-color);
+}
+.tweet-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  padding: 0 11px;
+}
+.tweet-header {
+  width: 47px;
+  height: 47px;
+  align-self: flex-start;
+  margin-right: 11px;
+  padding: 11px 0;
+}
+.tweet-header > svg {
+  width: 43px;
+  height: 43px;
+  border-radius: 43px;
+}
+.tweet-body {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  padding: 11px 0;
+}
+
+.content-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  white-space: nowrap;
+}
+
+.content-top .tweet-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+.content-top .tweet-username {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-gray-color);
+  margin-left: 4px;
+}
+.content-top > span {
+  line-height: 12px;
+  color: var(--text-gray-color);
+  padding: 0 4px;
+}
+.content-top .tweet-time {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-gray-color);
+}
+.content-top .tweet-options {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-self: flex-end;
+  margin-right: 4px;
+}
+
+.content-top .tweet-options > span > svg > path {
+  fill: var(--text-gray-color);
+}
+.content-mid {
+}
+.content-mid .tweet-content {
+  font-size: 14px;
+  font-weight: 400;
+}
+.content-bottom {
+  width: 100%;
+  margin-top: 11px;
+}
+.content-bottom .tweet-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 81.5%;
+}
+.content-bottom .tweet-buttons > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-gray-color);
+}
+.content-bottom .tweet-buttons > span > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+}
+.content-bottom .tweet-buttons > span:nth-child(1) > div:hover {
+  background-color: rgba(126, 228, 254, 0.225);
+  border-radius: 999px;
+
+  cursor: pointer;
+}
+.content-bottom .tweet-buttons > span:nth-child(1):hover > div > svg > path {
+  fill: rgb(100, 224, 255);
+  cursor: pointer;
+}
+.content-bottom .tweet-buttons > span:nth-child(2) > div:hover {
+  background-color: rgba(3, 215, 3, 0.331);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.content-bottom .tweet-buttons > span:nth-child(2):hover > div > svg > path {
+  fill: rgb(10, 243, 10);
+  cursor: pointer;
+}
+.content-bottom .tweet-buttons > span:nth-child(3) > div:hover {
+  background-color: rgba(255, 0, 0, 0.259);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.content-bottom .tweet-buttons > span:nth-child(3):hover > div > svg > path {
+  fill: rgb(255, 0, 0);
+  cursor: pointer;
+}
+.content-bottom .tweet-buttons > span > div > svg > path {
+  fill: var(--text-gray-color);
+}
+.content-bottom .tweet-buttons > span > div > svg > path {
+  cursor: pointer;
+}
+.content-bottom .tweet-buttons > span > div > svg {
+  cursor: pointer;
+}
+.content-bottom .tweet-buttons > span > span {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 11px;
+} /* Tweets */
