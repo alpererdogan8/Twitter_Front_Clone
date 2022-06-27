@@ -23,13 +23,13 @@ body {
   background-color: var(--theme-dark);
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-left: -42px;
 }
+
 @media screen and (max-width: 1298px) {
   .side-btnStyle span:nth-child(3) {
     display: none;
@@ -48,7 +48,7 @@ body {
   .container {
     align-items: flex-end;
   }
-  header{
+  header {
     width: 130px;
   }
   .miniProfile-text,
@@ -57,6 +57,27 @@ body {
   }
   .trends {
     display: none;
+  }
+}
+@media screen and (max-width: 676px) {
+  section {
+    width: 400px;
+  }
+  .editor-text {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 476px) {
+  section {
+    width: 300px;
+  }
+
+  .editor-text {
+    width: 100px;
+  }
+  .editor-footer {
+    width: 70%;
+    margin-left: 20px;
   }
 }
 main {
