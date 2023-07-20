@@ -1,7 +1,7 @@
 header {
   width: 317px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 header > svg {
   width: 45px;
@@ -11,6 +11,7 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 1px 11px;
+  margin-left: 18px;
 }
 .container {
   /* background-color: aquamarine; */
